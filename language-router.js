@@ -12,6 +12,7 @@ class LanguageRouter {
         };
         
         this.currentLang = this.detectLanguageFromURL();
+        console.log(this.currentLang, "this.currentLang")
         this.init();
     }
     
@@ -34,7 +35,7 @@ class LanguageRouter {
     detectLanguageFromURL() {
         const path = window.location.pathname;
         const langCode = path.split('/')[1]; // Get first path segment
-        
+
         if (this.languages[langCode]) {
             return this.languages[langCode];
         }
