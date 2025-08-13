@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Language routing
+RewriteRule ^tc/?$ index.html [L]
+RewriteRule ^sc/?$ index.html [L]
+RewriteRule ^en/?$ index.html [L]
+RewriteRule ^kr/?$ index.html [L]
+RewriteRule ^jp/?$ index.html [L]
+
+# Handle direct access to language paths
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(tc|sc|en|kr|jp)/.*$ index.html [L]
+
+# Default route
+RewriteRule ^$ index.html [L]

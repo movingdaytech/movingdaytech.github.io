@@ -1,39 +1,10 @@
 // MovingDay Landing Page JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all functionality
-    initHeaderEffects();
     initSmoothScrolling();
     initAnimations();
     initImageLazyLoading();
-    initScrollProgress();
 });
-
-// Header effects and navigation
-function initHeaderEffects() {
-    const header = document.querySelector('.header');
-    let lastScrollTop = 0;
-    
-    window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Add/remove scrolled class for styling
-        if (scrollTop > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-        
-        // Hide/show header on scroll (optional)
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-            header.style.transform = 'translateY(-100%)';
-        } else {
-            header.style.transform = 'translateY(0)';
-        }
-        
-        lastScrollTop = scrollTop;
-    });
-}
 
 // Smooth scrolling for anchor links
 function initSmoothScrolling() {
@@ -99,32 +70,6 @@ function initImageLazyLoading() {
         const lazyImages = document.querySelectorAll('img[data-src]');
         lazyImages.forEach(img => imageObserver.observe(img));
     }
-}
-
-// Scroll progress indicator
-function initScrollProgress() {
-    const progressBar = document.createElement('div');
-    progressBar.className = 'scroll-progress';
-    progressBar.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        background: linear-gradient(90deg, #667eea, #764ba2);
-        z-index: 1001;
-        transition: width 0.1s ease;
-    `;
-    
-    document.body.appendChild(progressBar);
-    
-    window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-        
-        progressBar.style.width = scrollPercent + '%';
-    });
 }
 
 // Parallax effect for hero section
@@ -216,18 +161,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add typing effect to questions (optional)
-    const questions = document.querySelectorAll('.question');
-    questions.forEach((question, index) => {
-        const text = question.textContent;
-        question.textContent = '';
+    // const questions = document.querySelectorAll('.question');
+    // questions.forEach((question, index) => {
+    //     const text = question.textContent;
+    //     question.textContent = '';
         
-        setTimeout(() => {
-            typeWriter(question, text, 0);
-        }, index * 1000);
-    });
+    //     setTimeout(() => {
+    //         typeWriter(question, text, 0);
+    //     }, index * 1000);
+    // });
     
-    // Initialize language switching
-    initLanguageSwitching();
+    // Language switching is now handled by language-router.js
 });
 
 // Typewriter effect function
@@ -286,35 +230,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 });
 
-// Add some fun interactive elements
-document.addEventListener('DOMContentLoaded', function() {
-    // Add floating animation to app icons
-    const floatingElements = document.querySelectorAll('.app-icon-large, .bear-image, .bear-loveletter');
-    
-    floatingElements.forEach((el, index) => {
-        el.style.animation = `float 3s ease-in-out infinite ${index * 0.5}s`;
-    });
-    
-    // Add floating animation CSS
-    const floatStyles = document.createElement('style');
-    floatStyles.textContent = `
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        .floating {
-            animation: float 3s ease-in-out infinite;
-        }
-    `;
-    
-    document.head.appendChild(floatStyles);
-});
-
 // Performance optimization: Throttle scroll events
 function throttle(func, limit) {
     let inThrottle;
@@ -334,73 +249,6 @@ window.addEventListener('scroll', throttle(function() {
     // Scroll-based animations and effects
 }, 16)); // 60fps
 
-// Add some accessibility improvements
-document.addEventListener('DOMContentLoaded', function() {
-    // Add skip to main content link
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main';
-    skipLink.textContent = 'Skip to main content';
-    skipLink.className = 'skip-link';
-    skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: #667eea;
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        border-radius: 4px;
-        z-index: 10000;
-        transition: top 0.3s ease;
-    `;
-    
-    document.body.insertBefore(skipLink, document.body.firstChild);
-    
-    // Show skip link on focus
-    skipLink.addEventListener('focus', function() {
-        this.style.top = '6px';
-    });
-    
-    skipLink.addEventListener('blur', function() {
-        this.style.top = '-40px';
-    });
-    
-    // Add main content id
-    const main = document.querySelector('main');
-    if (main) {
-        main.id = 'main';
-    }
-});
-
-// Add some Easter eggs for fun
-document.addEventListener('DOMContentLoaded', function() {
-    let clickCount = 0;
-    const title = document.querySelector('.main-title');
-    
-    if (title) {
-        title.addEventListener('click', function() {
-            clickCount++;
-            if (clickCount === 5) {
-                this.style.animation = 'rainbow 2s linear infinite';
-                
-                const rainbowStyles = document.createElement('style');
-                rainbowStyles.textContent = `
-                    @keyframes rainbow {
-                        0% { filter: hue-rotate(0deg); }
-                        100% { filter: hue-rotate(360deg); }
-                    }
-                `;
-                document.head.appendChild(rainbowStyles);
-                
-                setTimeout(() => {
-                    this.style.animation = '';
-                }, 5000);
-                
-                clickCount = 0;
-            }
-        });
-    }
-});
 
 // Language switching functionality
 function initLanguageSwitching() {
