@@ -54,7 +54,7 @@ p {
 
 .highlight {
     color: hsl(2, 62%, 55%);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a:focus {

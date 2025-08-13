@@ -1,311 +1,534 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MovingDay - Your countdown pal</title>
-    <meta name="description" content="MovingDay 與您一起倒數重要日子，記錄美好回憶，製作願望清單">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/app_icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/app_icon.png">
-    <link rel="apple-touch-icon" href="assets/app_icon.png">
-</head>
+    <meta
+      name="description"
+      content="MovingDay 與您一起倒數重要日子，記錄美好回憶，製作願望清單"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/app_icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/app_icon.png"
+    />
+    <link rel="apple-touch-icon" href="assets/app_icon.png" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-left">
-                        <img src="assets/app_name.png" alt="MovingDay App Name" class="app-name">
-                        <a href="https://apps.apple.com/hk/app/movingday/id6747246669" target="_blank">
-                            <img src="assets/badge_appstore_zh.png" alt="Download on App Store" class="app-store-badge">
-                        </a>
-                    </div>
-                    <div class="hero-right">
-                        <img src="assets/app_icon.png" alt="MovingDay App Icon" class="app-icon-large">
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-left">
+              <img
+                src="assets/app_name.png"
+                alt="MovingDay App Name"
+                class="app-name"
+              />
+              <a
+                href="https://apps.apple.com/hk/app/movingday/id6747246669"
+                target="_blank"
+              >
+                <img
+                  src="assets/badge_appstore_zh.png"
+                  alt="Download on App Store"
+                  class="app-store-badge"
+                />
+              </a>
             </div>
-        </section>
-
-        <!-- Problem Statement -->
-        <section class="line-emoji-container">
-            <a class="container" href="https://store.line.me/emojishop/product/685e52ea6f39046179b74d18/en" target="_blank">
-                <div class="problem-content">
-                    <div class="problem-left">
-                        <img src="assets/line_emoji.png" alt="Line Emoji" class="line-emoji">
-                    </div>
-                    <div class="problem-right">
-                        <img src="assets/line_emoji_word.png" alt="Problem Statement" class="problem-text">
-                    </div>
-                </div>
-            </a>    
-        </section>
-
-        <section class="problem-statement">
-            <div class="questions">
-                <div class="question" 
-                     data-zh='"您在忙碌生活中是否常常忘記重要日子？"'
-                     data-en='"Do you often forget important days in your busy life?"'
-                     data-kr='"바쁜 일상에서 중요한 날을 자주 잊어버리시나요?"'
-                     data-jp='"忙しい生活の中で大切な日をよく忘れてしまいますか？"'>
-                </div>
-                <div class="question"
-                     data-zh='"等待的時間是否覺得很漫長？"'
-                     data-en='"Does waiting time feel very long?"'
-                     data-kr='"기다리는 시간이 매우 길게 느껴지시나요?"'
-                     data-jp='"待つ時間がとても長く感じますか？"'>
-                </div>
+            <div class="hero-right">
+              <img
+                src="assets/app_icon.png"
+                alt="MovingDay App Icon"
+                class="app-icon-large"
+              />
             </div>
-        </section>
-        
-        <div class="border"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Solution -->
-        <section class="solution">
-            <div class="container">
-                <div class="solution-content">
-                    <div class="solution-left">
-                        <img src="assets/bear_empty_memory.png" alt="Bear with Empty Memory" class="bear-image">
-                    </div>
-                    <div class="solution-right">
-                        <h2 class="solution-title" 
-                            data-zh="MovingDay 與您一起<span class='highlight'>倒數</span>重要日子"
-                            data-en="MovingDay counts down with you to <span class='highlight'>important days</span>"
-                            data-kr="MovingDay이 중요한 날까지 <span class='highlight'>카운트다운</span>을 함께합니다"
-                            data-jp="MovingDayが大切な日まで<span class='highlight'>カウントダウン</span>をお手伝いします">
-                            MovingDay 與您一起<span class="highlight">倒數</span>重要日子
-                        </h2>
-                        <p class="solution-description"
-                           data-zh="一步一步走向每個重要時刻的 D-day，儘管過程漫長及辛苦，也陪伴在您的身旁，一起等待這份美好 :)"
-                           data-en="Step by step towards each important D-day moment. Even though the process is long and hard, we'll be by your side, waiting for this beautiful moment together :)"
-                           data-kr="각각의 중요한 D-day 순간을 향해 한 걸음씩 나아갑니다. 과정이 길고 힘들지만, 우리는 당신 곁에서 이 아름다운 순간을 함께 기다립니다 :)"
-                           data-jp="それぞれの大切なD-dayの瞬間に向かって一歩ずつ進んでいきます。過程が長く辛くても、私たちはあなたのそばでこの美しい瞬間を一緒に待っています :)">
-                            一步一步走向每個重要時刻的 D-day，儘管過程漫長及辛苦，也陪伴在您的身旁，一起等待這份美好 :)
-                        </p>
-                    </div>
-                </div>
+      <!-- Problem Statement -->
+      <section class="line-emoji-container">
+        <a
+          class="container"
+          href="https://store.line.me/emojishop/product/685e52ea6f39046179b74d18/en"
+          target="_blank"
+        >
+          <div class="problem-content">
+            <div class="problem-left">
+              <img
+                src="assets/line_emoji.png"
+                alt="Line Emoji"
+                class="line-emoji"
+              />
             </div>
-        </section>
-
-        <!-- Features -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                                          <div class="feature-card">
-                          <div class="feature-icon">
-                              <img src="assets/heart_red.svg" alt="戀愛" width="24" height="24">
-                          </div>
-                          <div class="feature-text">
-                              <h3>戀愛</h3>
-                              <p>您與另一半的紀念日及所有甜蜜日子</p>
-                          </div>
-                      </div>
-                                          <div class="feature-card">
-                          <div class="feature-icon">
-                              <img src="assets/airplane_purple.svg" alt="旅行" width="24" height="24">
-                          </div>
-                          <div class="feature-text">
-                              <h3>旅行</h3>
-                              <p>令人期待及放鬆的旅行</p>
-                          </div>
-                      </div>
-                                          <div class="feature-card">
-                          <div class="feature-icon">
-                              <img src="assets/cake_blue.svg" alt="生日" width="24" height="24">
-                          </div>
-                          <div class="feature-text">
-                              <h3>生日</h3>
-                              <p>每年您與摯愛的生日</p>
-                          </div>
-                      </div>
-                                          <div class="feature-card">
-                          <div class="feature-icon">
-                              <img src="assets/star_green.svg" alt="其他重要日子" width="24" height="24">
-                          </div>
-                          <div class="feature-text">
-                              <h3>其他重要日子</h3>
-                              <p>考試、畢業、升職等人生中重要的事</p>
-                          </div>
-                      </div>
-                </div>
+            <div class="problem-right">
+              <img
+                src="assets/line_emoji_word.png"
+                alt="Problem Statement"
+                class="problem-text"
+              />
             </div>
-        </section>
+          </div>
+        </a>
+      </section>
 
-        <!-- Feature Details -->
-        <section class="feature-details">
-            <div class="container">
-                <!-- Theme Celebration -->
-                <div class="feature-detail">
-                    <div class="feature-detail-content">
-                        <div class="feature-detail-text">
-                            <h2 data-zh="<strong>以不同</strong><span class='highlight'><strong>主題慶祝</strong></span><strong> D-day</strong>"
-                                data-en="<strong>Celebrate</strong> <span class='highlight'><strong>D-day</strong></span> <strong>with different themes</strong>"
-                                data-kr="<strong>다양한</strong> <span class='highlight'><strong>테마</strong></span><strong>로 D-day를 축하</strong>"
-                                data-jp="<strong>異なる</strong><span class='highlight'><strong>テーマ</strong></span><strong>でD-dayを祝います</strong>">
-                                <strong>以不同</strong><span class="highlight"><strong>主題慶祝</strong></span><strong> D-day</strong>
-                            </h2>
-                            <p data-zh="不同的倒數類別，以不同的主題動畫慶祝 D-day 的來臨，為每個特別日子增添儀式感。"
-                               data-en="Different countdown categories celebrate D-day with themed animations, adding ceremony to each special day."
-                               data-kr="다양한 카운트다운 카테고리가 테마 애니메이션으로 D-day를 축하하여 각 특별한 날에 의식을 더합니다."
-                               data-jp="異なるカウントダウンカテ고リーがテーマアニメーションでD-dayを祝い、各特別な日に儀式感を加えます。">
-                                不同的倒數類別，以不同的主題動畫慶祝 D-day 的來臨，為每個特別日子增添儀式感。
-                            </p>
-                        </div>
-                        <div class="feature-detail-image">
-                            <img src="assets/Group_57.png" alt="Theme Celebration">
-                        </div>
-                    </div>
-                </div>
+      <section class="problem-statement">
+        <div class="questions">
+          <div
+            class="question"
+            data-zh='"您在忙碌生活中是否常常忘記重要日子？"'
+            data-en='"Do you often forget special days in your busy life?"'
+            data-kr='"당신은 바쁜 생활 속에서 중요한 날을 자주 잊어버리십니까?"'
+            data-jp='"あなたは忙しい生活の中で重要な日をよく忘れますか？"'
+          ></div>
+          <div
+            class="question"
+            data-zh='"等待的時間是否覺得很漫長？"'
+            data-en='"Does the waiting time seem to stretch on?"'
+            data-kr='"기다리는 시간이 길게 느껴지지 않나요?"'
+            data-jp='"待ち時間が長く感じませんか？"'
+          ></div>
+        </div>
+      </section>
 
-                <!-- Share Feelings -->
-                <div class="feature-detail">
-                    <div class="feature-detail-content">
-                        <div class="feature-detail-text">
-                            <h2 data-zh="<strong>像日記一樣</strong><span class='highlight'><strong>分享感受</strong></span>"
-                                data-en="<strong>Share feelings</strong> <span class='highlight'><strong>like a diary</strong></span>"
-                                data-kr="<strong>일기처럼</strong> <span class='highlight'><strong>감정을 공유</strong></span>"
-                                data-jp="<strong>日記のように</strong><span class='highlight'><strong>気持ちを共有</strong></span>">
-                                <strong>像日記一樣</strong><span class="highlight"><strong>分享感受</strong></span>
-                            </h2>
-                            <p data-zh="留下說不出的感受及真心，與摯愛共同分享及回憶這些珍貴的瞬間，令關係變得更加密切。"
-                               data-en="Share unspoken feelings and sincerity with loved ones, creating precious memories and strengthening relationships."
-                               data-kr="말로 표현할 수 없는 감정과 진심을 사랑하는 사람과 공유하고 이 소중한 순간들을 추억하며 관계를 더욱 돈독하게 만듭니다."
-                               data-jp="言葉にできない気持ちと真心を大切な人と共有し、これらの貴重な瞬間を思い出として残し、関係をより親密にします。">
-                                留下說不出的感受及真心，與摯愛共同分享及回憶這些珍貴的瞬間，令關係變得更加密切。
-                            </p>
-                        </div>
-                        <div class="feature-detail-image">
-                            <img src="assets/Group_57_(1).png" alt="Share Feelings">
-                        </div>
-                    </div>
-                </div>
+      <div class="border"></div>
 
-                <!-- Wish List -->
-                <div class="feature-detail">
-                    <div class="feature-detail-content">
-                        <div class="feature-detail-text">
-                            <h2 data-zh="製作你的<span class='highlight'>願望清單</span>"
-                                data-en="Create your <span class='highlight'>wish list</span>"
-                                data-kr="당신의 <span class='highlight'>소원 목록</span>을 만듭니다"
-                                data-jp="あなたの<span class='highlight'>願いリスト</span>を作成します">
-                                製作你的<span class="highlight">願望清單</span>
-                            </h2>
-                            <p data-zh="記錄你不同的願望，逐一實現它們，令人生旅途更加閃亮。"
-                               data-en="Record your different wishes and achieve them one by one, making your life journey brighter."
-                               data-kr="다양한 소원을 기록하고 하나씩 실현하여 인생 여정을 더욱 빛나게 만듭니다."
-                               data-jp="あなたの様々な願いを記録し、一つずつ実現して、人生の旅をより輝かしくします。">
-                                記錄你不同的願望，逐一實現它們，令人生旅途更加閃亮。
-                            </p>
-                        </div>
-                        <div class="feature-detail-image">
-                            <img src="assets/Group_57_(2).png" alt="Wish List">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- iOS Widget -->
-                <div class="feature-detail">
-                    <div class="feature-detail-content">
-                        <div class="feature-detail-text">
-                            <h2 data-zh="iOS主畫面<span class='highlight'>倒數小工具(Widget)</span>"
-                                data-en="iOS Home Screen <span class='highlight'>Countdown Widget</span>"
-                                data-kr="iOS 홈 화면 <span class='highlight'>카운트다운 위젯</span>"
-                                data-jp="iOSホーム画面<span class='highlight'>カウントダウンウィジェット</span>">
-                                iOS主畫面<span class="highlight">倒數小工具(Widget)</span>
-                            </h2>
-                            <p data-zh="讓你能夠在手機桌面上輕鬆查看倒數活動，不再忘記重要日子。"
-                               data-en="Easily view countdown activities on your phone's home screen, never forgetting important days."
-                               data-kr="휴대폰 홈 화면에서 쉽게 카운트다운 활동을 확인하여 중요한 날을 잊지 않습니다."
-                               data-jp="携帯電話のホーム画面でカウントダウン活動を簡単に確認でき、大切な日を忘れることがありません。">
-                                讓你能夠在手機桌面上輕鬆查看倒數活動，不再忘記重要日子。
-                            </p>
-                        </div>
-                        <div class="feature-detail-image">
-                            <img class="feature4" src="assets/feature4_zh.png" alt="iOS Widget">
-                        </div>
-                    </div>
-                </div>
+      <!-- Solution -->
+      <section class="solution">
+        <div class="container">
+          <div class="solution-content">
+            <div class="solution-left">
+              <img
+                src="assets/bear_empty_memory.png"
+                alt="Bear with Empty Memory"
+                class="bear-image"
+              />
             </div>
-        </section>
-
-        <div class="border"></div>
-
-        <!-- Download Section -->
-        <section class="download">
-            <div class="container">
-                <div class="download-content">
-                    <img src="assets/text.png" alt="Download Text" class="download-text">
-                    <a href="https://apps.apple.com/hk/app/movingday/id6747246669" target="_blank">
-                        <img src="assets/badge_appstore_zh 1.png" alt="Download on App Store" class="download-badge">
-                    </a>
-                </div>
+            <div class="solution-right">
+              <h2
+                class="solution-title"
+                data-zh="MovingDay 與您一起<span class='highlight'>倒數</span>重要日子"
+                data-en="MovingDay <span class='highlight'>count down</span> special days with you"
+                data-kr="당신과 함께하는 MovingDay <span class='highlight'>카운트다운</span>특별한 날들"
+                data-jp="あなたと共にするMoving Day<span class='highlight'>カウントダウン</span>特別な日々"
+              >
+                MovingDay 與您一起<span class="highlight">倒數</span>重要日子
+              </h2>
+              <p
+                class="solution-description"
+                data-zh="一步一步走向每個重要時刻的 D-day，儘管過程漫長及辛苦，也陪伴在您的身旁，一起等待這份美好 :)"
+                data-en="Step by step, we approach each important D-day. Though it's a long journey, MovingDay will be by your side, waiting for this beautiful moment. :)"
+                data-kr="한 걸음 한 걸음씩 중요한 D-day 다가갑니다. 긴 여정이지만 무빙데이는 여러분 곁에서 이 아름다운 순간을 기다리며 함께할 것입니다. :)"
+                data-jp="一歩一歩重要なD-dayに近づきます。 長い旅路ですが、ムービングデーは皆様のそばでこの美しい瞬間を待ちながら共にします。:)"
+              >
+                一步一步走向每個重要時刻的
+                D-day，儘管過程漫長及辛苦，也陪伴在您的身旁，一起等待這份美好 :)
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Final Image -->
-        <section class="final-image">
-            <div class="container">
-                <img src="assets/bear_loveletter.png" alt="Bear with Love Letter" class="bear-loveletter">
+      <!-- Features -->
+      <section class="features">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="assets/heart_red.svg"
+                  alt="戀愛"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div class="feature-text">
+                <h3
+                  data-zh="戀愛"
+                  data-en="Love"
+                  data-kr="사랑"
+                  data-jp="恋愛"
+                >
+                  戀愛
+                </h3>
+                <p
+                  data-zh="您與另一半的紀念日及所有甜蜜日子"
+                  data-en="Your anniversaries and all sweet moments with your partner"
+                  data-kr="당신의 기념일과 파트너의 달콤한 순간들"
+                  data-jp="あなたの記念日とパートナーの瞬間"
+                >
+                  您與另一半的紀念日及所有甜蜜日子
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="assets/airplane_purple.svg"
+                  alt="旅行"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div class="feature-text">
+                <h3
+                  data-zh="旅行"
+                  data-en="Travel"
+                  data-kr="여행"
+                  data-jp="旅行"
+                >
+                  旅行
+                </h3>
+                <p
+                  data-zh="令人期待及放鬆的旅行"
+                  data-en="Exciting and relaxing trips around the world"
+                  data-kr="신나고 편안한 세계 일주 여행"
+                  data-jp="楽しい快適な世界一周旅行"
+                >
+                  令人期待及放鬆的旅行
+                </p>
+              </div>
+            </div>
 
-        <!-- Language Support -->
-        <section class="languages">
-            <div class="container">
-                <div class="language-grid">
-                    <a href="/" class="language-card" data-lang="zh" data-lang-name="繁體中文">
-                        <img src="assets/text_zh.png" alt="繁體中文">
-                    </a>
-                    <a href="/en" class="language-card" data-lang="en" data-lang-name="English">
-                        <img src="assets/text_en.png" alt="English">
-                    </a>
-                    <a href="/kr" class="language-card" data-lang="kr" data-lang-name="한국어">
-                        <img src="assets/text_kr.png" alt="한국어">
-                    </a>
-                    <a href="/jp" class="language-card" data-lang="jp" data-lang-name="日本語">
-                        <img src="assets/text_jp.png" alt="日本語">
-                    </a>
-                </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="assets/cake_blue.svg"
+                  alt="生日"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div class="feature-text">
+                <h3
+                  data-zh="生日"
+                  data-en="Birthday"
+                  data-kr="생일"
+                  data-jp="誕生日"
+                >
+                  生日
+                </h3>
+                <p
+                  data-zh="每年您與摯愛的生日"
+                  data-en="Your and your loved ones' birthdays every year"
+                  data-kr="당신과 사랑하는 사람들의 매년 생일"
+                  data-jp="あなたと愛する人たちの毎年の誕生日"
+                >
+                  每年您與摯愛的生日
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img
+                  src="assets/star_green.svg"
+                  alt="其他重要日子"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div class="feature-text">
+                <h3
+                  data-zh="其他重要日子"
+                  data-en="Other Important Days"
+                  data-kr="다른 중요한 날들"
+                  data-jp="その他の重要な日々"
+                >
+                  其他重要日子
+                </h3>
+                <p
+                  data-zh="考試、畢業、升職等人生中重要的事"
+                  data-en="Important life events such as exams, graduation, promotions"
+                  data-kr="시험, 졸업, 승진 등 중요한 인생 이벤트"
+                  data-jp="試験、卒業、昇進などのイベント"
+                >
+                  考試、畢業、升職等人生中重要的事
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Details -->
+      <section class="feature-details">
+        <div class="container">
+          <!-- Theme Celebration -->
+          <div class="feature-detail">
+            <div class="feature-detail-content">
+              <div class="feature-detail-text">
+                <h2
+                  data-zh="以不同<span class='highlight'>主題慶祝</span> D-day"
+                  data-en="Celebrate D-day with <span class='highlight'>Themes</span>"
+                  data-kr="<span class='highlight'>테마로</span> D-day 기념하기"
+                  data-jp="<span class='highlight'>テーマで</span>D-dayを記念します"
+                >
+
+                </h2>
+                <p
+                  data-zh="不同的倒數類別，以不同的主題動畫慶祝 D-day 的來臨，為每個特別日子增添儀式感。"
+                  data-en="Count down with different themes and animations, adding ritual to each special day."
+                  data-kr="다양한 카운트다운 카테고리와 다양한 테마 애니메이션으로 D-day의 도래를 축하하며, 각 특별한 날에 의식감을 더합니다."
+                  data-jp="様々なカウントダウンカテゴリーと多様なテーマアニメーションでD-dayの到来を祝い、各特別な日に意識感を加えます。"
+                >
+                  不同的倒數類別，以不同的主題動畫慶祝 D-day
+                  的來臨，為每個特別日子增添儀式感。
+                </p>
+              </div>
+              <div class="feature-detail-image">
+                <img src="assets/Group_57.png" alt="Theme Celebration" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Share Feelings -->
+          <div class="feature-detail">
+            <div class="feature-detail-content">
+              <div class="feature-detail-text">
+                <h2
+                data-zh="像日記一樣<span class='highlight'>分享感受</span>"
+                data-en="<span class='highlight'>Share feelings</span> like a Diary"
+                data-kr="일기처럼 <span class='highlight'>감정 나누기</span>"
+                data-jp="日記のように<span class='highlight'>感情を分かち合うこと</span>"
+                >
+                </h2>
+                <p
+                  data-zh="留下說不出的感受及真心，與摯愛共同分享及回憶這些珍貴的瞬間，令關係變得更加密切。"
+                  data-en="Express your feelings and memories with loved ones, deepening your bond."
+                  data-kr="사랑하는 사람들과의 감정과 추억을 표현하며 유대감을 깊게 합니다."
+                  data-jp="愛する人々との感情と思い出を表現し、絆を深めます。"
+                >
+                  留下說不出的感受及真心，與摯愛共同分享及回憶這些珍貴的瞬間，令關係變得更加密切。
+                </p>
+              </div>
+              <div class="feature-detail-image">
+                <img src="assets/Group_57_(1).png" alt="Share Feelings" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Wish List -->
+          <div class="feature-detail">
+            <div class="feature-detail-content">
+              <div class="feature-detail-text">
+                <h2
+                data-zh="製作你的<span class='highlight'>願望清單</span>"
+                data-en="Create your own <span class='highlight'>bucket list</span>"
+                data-kr="나만의 <span class='highlight'>버킷리스트</span> 만들기"
+                data-jp="自分だけの<span class='highlight'>バケットリスト</span>作り"
+                >
+                </h2>
+                <p
+                  data-zh="記錄你不同的願望，逐一實現它們，令人生旅途更加閃亮。"
+                  data-en="Record your various wishes and fulfill them one by one, making life's journey even more brilliant."
+                  data-kr="당신의 다양한 소망을 기록하고 하나하나 성취하여 인생의 여정을 더욱 빛나게 만드세요."
+                  data-jp="あなたの様々な願いを記録し、一つ一つ達成して人生の旅路をさらに輝かせてください。"
+                >
+                  記錄你不同的願望，逐一實現它們，令人生旅途更加閃亮。
+                </p>
+              </div>
+              <div class="feature-detail-image">
+                <img src="assets/Group_57_(2).png" alt="Wish List" />
+              </div>
+            </div>
+          </div>
+
+          <!-- iOS Widget -->
+          <div class="feature-detail">
+            <div class="feature-detail-content">
+              <div class="feature-detail-text">
+                <h2
+                  data-zh="iOS主畫面<span class='highlight'>倒數小工具(Widget)</span>"
+                  data-en="iOS Home screen <span class='highlight'>Countdown Widget</span>"
+                  data-kr="iOS 홈 화면 <span class='highlight'>카운트다운 위젯</span>"
+                  data-jp="iOSホーム画面<span class='highlight'>カウントダウンウィジェット</span>"
+                >
+                  iOS主畫面<span class="highlight">倒數小工具(Widget)</span>
+                </h2>
+                <p
+                  data-zh="讓你能夠在手機桌面上輕鬆查看倒數活動，不再忘記重要日子。"
+                  data-en="Keep an eye on your upcoming events - directly on your Home Screen! Never forget your important days."
+                  data-kr="휴대폰 바탕화면에서 카운트다운 이벤트를 쉽게 확인하고 중요한 날을 잊지 않을 수 있습니다."
+                  data-jp="モバイルデスクトップで最後のイベントを簡単に確認でき、重要な日を忘れることがありません。"
+                >
+                  讓你能夠在手機桌面上輕鬆查看倒數活動，不再忘記重要日子。
+                </p>
+              </div>
+              <div class="feature-detail-image">
+                <img
+                  class="feature4"
+                  src="assets/feature4_zh.png"
+                  alt="iOS Widget"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="border"></div>
+
+      <!-- Download Section -->
+      <section class="download">
+        <div class="container">
+          <div class="download-content">
+            <img
+              src="assets/text.png"
+              alt="Download Text"
+              class="download-text"
+            />
+            <a
+              href="https://apps.apple.com/hk/app/movingday/id6747246669"
+              target="_blank"
+            >
+              <img
+                src="assets/badge_appstore_zh 1.png"
+                alt="Download on App Store"
+                class="download-badge"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Image -->
+      <section class="final-image">
+        <div class="container">
+          <img
+            src="assets/bear_loveletter.png"
+            alt="Bear with Love Letter"
+            class="bear-loveletter"
+          />
+        </div>
+      </section>
+
+      <!-- Language Support -->
+      <section class="languages">
+        <div class="container">
+          <div class="language-grid">
+            <a
+              href="/"
+              class="language-card"
+              data-lang="zh"
+              data-lang-name="繁體中文"
+            >
+              <img src="assets/text_zh.png" alt="繁體中文" />
+            </a>
+            <a
+              href="/en"
+              class="language-card"
+              data-lang="en"
+              data-lang-name="English"
+            >
+              <img src="assets/text_en.png" alt="English" />
+            </a>
+            <a
+              href="/kr"
+              class="language-card"
+              data-lang="kr"
+              data-lang-name="한국어"
+            >
+              <img src="assets/text_kr.png" alt="한국어" />
+            </a>
+            <a
+              href="/jp"
+              class="language-card"
+              data-lang="jp"
+              data-lang-name="日本語"
+            >
+              <img src="assets/text_jp.png" alt="日本語" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <a class="notion-link logo" href="/">
-                <img src="assets/app_logo.png" alt="App logo" class="footer-logo">
-            </a>
+      <div class="container">
+        <a class="notion-link logo" href="/">
+          <img src="assets/app_logo.png" alt="App logo" class="footer-logo" />
+        </a>
 
-            <div class="footer-link icons">
-                <a href="https://www.instagram.com/movingday.tech/" class="notion-link" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24" height="24"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg>
-                </a>
+        <div class="footer-link icons">
+          <a
+            href="https://www.instagram.com/movingday.tech/"
+            class="notion-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+              ></path>
+            </svg>
+          </a>
 
-                <a href="https://www.threads.com/@movingday.tech" class="notion-link" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24" height="24"><title>Threads</title><path d="M17.743 11.123a8.547 8.547 0 0 0-.315-.142c-.185-3.414-2.05-5.368-5.182-5.388h-.042c-1.874 0-3.431.8-4.39 2.255l1.722 1.181c.716-1.087 1.84-1.319 2.669-1.319h.028c1.031.007 1.81.307 2.313.892.367.425.612 1.014.733 1.756a13.176 13.176 0 0 0-2.96-.143c-2.977.172-4.892 1.908-4.763 4.321.065 1.224.675 2.277 1.717 2.965.88.582 2.015.866 3.195.802 1.557-.086 2.778-.68 3.63-1.766.648-.825 1.057-1.894 1.238-3.241.742.448 1.292 1.037 1.596 1.745.517 1.205.547 3.184-1.068 4.797-1.415 1.414-3.116 2.025-5.686 2.044-2.851-.02-5.008-.935-6.41-2.717-1.313-1.67-1.991-4.08-2.016-7.165.025-3.085.703-5.496 2.016-7.165 1.402-1.782 3.558-2.696 6.41-2.717 2.871.02 5.065.94 6.521 2.73.714.879 1.252 1.983 1.607 3.27l2.018-.538c-.43-1.585-1.107-2.95-2.027-4.083C18.43 1.2 15.7.024 12.185 0h-.014C8.66.024 5.963 1.205 4.15 3.51c-1.614 2.05-2.446 4.905-2.474 8.482v.016c.028 3.578.86 6.431 2.473 8.482 1.813 2.305 4.512 3.486 8.022 3.51h.014c3.12-.022 5.319-.839 7.13-2.649 2.371-2.368 2.3-5.336 1.518-7.158-.56-1.307-1.629-2.368-3.09-3.07zm-5.387 5.065c-1.305.074-2.66-.512-2.728-1.766-.05-.93.662-1.969 2.808-2.092.246-.015.487-.021.724-.021.78 0 1.508.075 2.171.22-.247 3.088-1.697 3.59-2.975 3.66z"></path></svg>
-                </a>
-            </div>
-               
-            
-            <div class="footer-link">
-                <a class="notion-link" href="/"><p>主頁/Home</p></a>
-                <a class="notion-link" href="/terms"><p>使用條款/Terms</p></a>
-                <a href="mailto:movingday.tech@gmail.com" class="notion-link" target="_blank" rel="noopener noreferrer"><p>諮詢合作/Contact</p></a>
-            </div>
-            <div class="border"></div>
-            <p class="copyright">Copyright &copy; MovingDay. All rights reserved.</p>
+          <a
+            href="https://www.threads.com/@movingday.tech"
+            class="notion-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <title>Threads</title>
+              <path
+                d="M17.743 11.123a8.547 8.547 0 0 0-.315-.142c-.185-3.414-2.05-5.368-5.182-5.388h-.042c-1.874 0-3.431.8-4.39 2.255l1.722 1.181c.716-1.087 1.84-1.319 2.669-1.319h.028c1.031.007 1.81.307 2.313.892.367.425.612 1.014.733 1.756a13.176 13.176 0 0 0-2.96-.143c-2.977.172-4.892 1.908-4.763 4.321.065 1.224.675 2.277 1.717 2.965.88.582 2.015.866 3.195.802 1.557-.086 2.778-.68 3.63-1.766.648-.825 1.057-1.894 1.238-3.241.742.448 1.292 1.037 1.596 1.745.517 1.205.547 3.184-1.068 4.797-1.415 1.414-3.116 2.025-5.686 2.044-2.851-.02-5.008-.935-6.41-2.717-1.313-1.67-1.991-4.08-2.016-7.165.025-3.085.703-5.496 2.016-7.165 1.402-1.782 3.558-2.696 6.41-2.717 2.871.02 5.065.94 6.521 2.73.714.879 1.252 1.983 1.607 3.27l2.018-.538c-.43-1.585-1.107-2.95-2.027-4.083C18.43 1.2 15.7.024 12.185 0h-.014C8.66.024 5.963 1.205 4.15 3.51c-1.614 2.05-2.446 4.905-2.474 8.482v.016c.028 3.578.86 6.431 2.473 8.482 1.813 2.305 4.512 3.486 8.022 3.51h.014c3.12-.022 5.319-.839 7.13-2.649 2.371-2.368 2.3-5.336 1.518-7.158-.56-1.307-1.629-2.368-3.09-3.07zm-5.387 5.065c-1.305.074-2.66-.512-2.728-1.766-.05-.93.662-1.969 2.808-2.092.246-.015.487-.021.724-.021.78 0 1.508.075 2.171.22-.247 3.088-1.697 3.59-2.975 3.66z"
+              ></path>
+            </svg>
+          </a>
         </div>
-    </footer>
 
+        <div class="footer-link">
+          <a class="notion-link" href="/"><p>主頁/Home</p></a>
+          <a class="notion-link" href="/terms"><p>使用條款/Terms</p></a>
+          <a
+            href="mailto:movingday.tech@gmail.com"
+            class="notion-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><p>諮詢合作/Contact</p></a
+          >
+        </div>
+        <div class="border"></div>
+        <p class="copyright">
+          Copyright &copy; MovingDay. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="languages.js"></script>
     <script src="language-router.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
