@@ -77,11 +77,15 @@ movingdaytech.github.io/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles and animations
 ├── script.js           # JavaScript functionality
+├── terms.html          # Terms of Use & Privacy Policy page
+├── terms-styles.css    # Terms page CSS styles
+├── terms-script.js     # Terms page JavaScript
 ├── README.md           # Project documentation
 ├── app-ads.txt         # App Store metadata
 └── assets/             # Image assets folder
     ├── app_icon.png    # App icon
     ├── app_name.png    # App name logo
+    ├── logo_name.png   # MovingDay logo
     ├── badge_appstore_zh.png # App Store badge
     ├── feature4_zh.png # iOS Widget feature
     ├── Group_57.png    # Theme celebration
