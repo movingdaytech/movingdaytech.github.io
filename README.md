@@ -10,6 +10,7 @@ A modern, responsive landing page for the MovingDay app - your countdown compani
 - **Performance Optimized**: Lazy loading, throttled scroll events, and optimized animations
 - **Accessibility**: WCAG compliant with skip links and proper focus management
 - **Cross-browser Compatible**: Works on all modern browsers
+- **Multi-language Support**: Dynamic language switching with asset changes
 
 ## 🎨 Design Highlights
 
@@ -46,6 +47,29 @@ A modern, responsive landing page for the MovingDay app - your countdown compani
 
 - Modern web browser
 - Local web server (optional, for development)
+
+### Language Switching System
+
+The website includes a comprehensive multi-language system that allows users to switch between different languages and automatically loads appropriate assets.
+
+#### How to Use:
+1. **Language Cards**: Click on any language card in the "Supported Languages" section
+2. **Instant Switching**: Content changes immediately without page reload
+3. **Asset Loading**: Language-specific images and resources are automatically loaded
+4. **Persistent Preference**: Your language choice is saved in local storage
+
+#### Supported Languages:
+- 🇹🇼 **繁體中文 (Traditional Chinese)** - Default language
+- 🇺🇸 **English** - International version
+- 🇰🇷 **한국어 (Korean)** - Korean version
+- 🇯🇵 **日本語 (Japanese)** - Japanese version
+
+#### What Changes:
+- Page title and meta descriptions
+- All text content throughout the website
+- App store badges and language-specific assets
+- Feature descriptions and section titles
+- User interface elements
 
 ### Installation
 
@@ -104,6 +128,13 @@ movingdaytech.github.io/
 ```
 
 ## 🎯 Key Features
+
+### Multi-language Support
+- **Dynamic Language Switching**: Click on language cards to instantly change content
+- **Asset Management**: Automatically loads language-specific images and resources
+- **Local Storage**: Remembers user's language preference
+- **Real-time Updates**: Changes page title, meta descriptions, and all content
+- **Supported Languages**: Traditional Chinese, English, Korean, Japanese
 
 ### Responsive Design
 - Mobile-first approach
