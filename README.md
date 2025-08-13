@@ -79,10 +79,23 @@ movingdaytech.github.io/
 ├── script.js           # JavaScript functionality
 ├── README.md           # Project documentation
 ├── app-ads.txt         # App Store metadata
-└── MovingDay 2195db8f98ea8078b632d6fe4fe08517/
+└── assets/             # Image assets folder
     ├── app_icon.png    # App icon
     ├── app_name.png    # App name logo
     ├── badge_appstore_zh.png # App Store badge
+    ├── feature4_zh.png # iOS Widget feature
+    ├── Group_57.png    # Theme celebration
+    ├── Group_57_(1).png # Share feelings
+    ├── Group_57_(2).png # Wish list
+    ├── bear_empty_memory.png # Bear character
+    ├── bear_loveletter.png # Bear with love letter
+    ├── line_emoji.png  # Line emoji
+    ├── line_emoji_word.png # Problem statement
+    ├── text.png        # Download text
+    ├── text_zh.png     # Chinese text
+    ├── text_en.png     # English text
+    ├── text_kr.png     # Korean text
+    ├── text_jp.png     # Japanese text
     └── ...             # Other app assets
 ```
 
