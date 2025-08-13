@@ -99,31 +99,47 @@ class LanguageRouter {
         const imageMappings = {
             zh: {
                 'badge_appstore_zh.png': 'assets/badge_appstore_zh.png',
-                'badge_appstore_zh 1.png': 'assets/badge_appstore_zh 1.png',
+                'badge_appstore_zh1.png': 'assets/badge_appstore_zh 1.png',
                 'app_name.png': 'assets/app_name.png',
                 'text_zh.png': 'assets/text_zh.png',
-                'text.png': 'assets/text_zh.png'
+                'text.png': 'assets/text.png',
+                "Group_57.png": "assets/Group_57.png",
+                "Group_57_(1).png": "assets/Group_57_(1).png",
+                "Group_57_(2).png": "assets/Group_57_(2).png",
+                "feature4_zh.png": "assets/feature4_zh.png",
             },
             en: {
                 'badge_appstore_zh.png': 'assets/badge_appstore_en.png',
-                'badge_appstore_zh 1.png': 'assets/badge_appstore_en.png',
+                'badge_appstore_zh1.png': 'assets/badge_appstore_en.png',
                 'app_name.png': 'assets/app_name_en.png',
-                'text_zh.png': 'assets/text_en.png',
-                'text.png': 'assets/text_en.png'
+                'text_zh.png': 'assets/text_zh.png',
+                'text.png': 'assets/download_en.png',
+                "Group_57.png": "assets/theme_en.png",
+                "Group_57_(1).png": "assets/timeline_en.png",
+                "Group_57_(2).png": "assets/wishlist_en.png",
+                "feature4_zh.png": "assets/feature4_en.png",
             },
             kr: {
-                'badge_appstore_zh.png': 'assets/badge_appstore_kr.png',
-                'badge_appstore_zh 1.png': 'assets/badge_appstore_kr.png',
+                'badge_appstore_zh.png': 'assets/badge_appstore_en.png',
+                'badge_appstore_zh1.png': 'assets/badge_appstore_en.png',
                 'app_name.png': 'assets/app_name_kr.png',
-                'text_zh.png': 'assets/text_kr.png',
-                'text.png': 'assets/text_kr.png'
+                'text_zh.png': 'assets/text_zh.png',
+                'text.png': 'assets/download_kr.png',
+                "Group_57.png": "assets/theme_kr.png",
+                "Group_57_(1).png": "assets/timeline_kr.png",
+                "Group_57_(2).png": "assets/wishlist_kr.png",
+                "feature4_zh.png": "assets/feature4_kr.png",
             },
             jp: {
-                'badge_appstore_zh.png': 'assets/badge_appstore_jp.png',
-                'badge_appstore_zh 1.png': 'assets/badge_appstore_jp.png',
+                'badge_appstore_zh.png': 'assets/badge_appstore_en.png',
+                'badge_appstore_zh1.png': 'assets/badge_appstore_en.png',
                 'app_name.png': 'assets/app_name_jp.png',
-                'text_zh.png': 'assets/text_jp.png',
-                'text.png': 'assets/text_jp.png'
+                'text_zh.png': 'assets/text_zh.png',
+                'text.png': 'assets/download_jp.png',
+                "Group_57.png": "assets/theme_jp.png",
+                "Group_57_(1).png": "assets/timeline_jp.png",
+                "Group_57_(2).png": "assets/wishlist_jp.png",
+                "feature4_zh.png": "assets/feature4_jp.png",
             }
         };
         
