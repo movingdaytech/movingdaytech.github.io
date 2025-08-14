@@ -108,6 +108,15 @@ main {
     padding-top: 64px;
 }
 
+
+@media (max-width: 546px) {
+    main {
+        padding-left: calc(env(safe-area-inset-left) + 24px);
+        padding-right: calc(env(safe-area-inset-right) + 24px);
+        padding-bottom: 180px;
+    }
+}
+
 /* Hero Section */
 .hero {
     background: #f5f3ef;
